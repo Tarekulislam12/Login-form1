@@ -7,8 +7,30 @@
     <title>Login</title>
     <script src="https://kit.fontawesome.com/f637f9d094.js" crossorigin="anonymous"></script>
     <style>
+        @keyframes slideing {
+            0%{
+                background-color: cadetblue ;
+
+            }
+            25%{
+                background-color: rgb(255, 225, 220);
+
+            }
+            50%{
+                background-color: crimson;
+            }
+            75%{
+                background-color: darkmagenta;
+            }
+            100%{
+                background-color: darkgoldenrod;
+            }
+            
+        }
         *{
             background-color: cadetblue;
+            animation: slideing 8s ease 0.5s infinite;
+            animation-play-state: running;
         }
         .login{
             display: flex;
@@ -80,7 +102,7 @@
             <h1>Please Login</h1>
             <input type="email" name="" id="" placeholder="Your Email" required>
             <input type="text" class="password" name="" id="" placeholder="Password" required>
-            <input id="inp" type="submit" value="Login">
+            <a href="https://www.remove.bg/upload"><input id="inp" type="submit" value="Login"></a>
         </form>
     </section>
 </body>
