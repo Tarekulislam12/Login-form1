@@ -28,14 +28,17 @@
             
         }
         *{
-            background-color: cadetblue;
-            animation: slideing 8s ease 0.5s infinite;
-            animation-play-state: running;
+            background-color: rgb(52, 210, 215);
+            
         }
         .login{
             display: flex;
             flex-direction: column;
             width: 50%;
+            background-color: white;
+            animation: slideing 8s ease 0.5s infinite;
+            animation-play-state: running;
+            justify-content: center;
             
         }
         .login input{
@@ -45,7 +48,8 @@
             padding-bottom: 5px;
             padding-left: 10px;
             padding-right: 10px;
-            border: 2px solid black;
+            border: 5px solid black;
+
             
         }
         .login input:hover{
@@ -61,8 +65,18 @@
         .login-container{
             display: flex;
             justify-content: center;
-            margin-top: 70px;
+            margin: 50px;
+            height: 300;
+            width: 500px;
+            border: 5px solid black;
+            text-align: center;
+            background-color: brown;
+            animation: slideing 8s ease 0.5s infinite;
+            animation-play-state: running;
+            
+            
         }
+        
         nav a{
             text-decoration: none;
             color: black;
@@ -78,6 +92,14 @@
         nav{
             display: flex;
             justify-content: space-between;
+        }
+        .log{
+            font-size: 30px;
+        }
+        section{
+            justify-content: center;
+            align-items: center;
+            margin: 0;
         }
         
     </style>
@@ -99,10 +121,10 @@
     </head>
     <section class="login-container">
         <form class="login">
-            <h1>Please Login</h1>
+            <h1 class="log">Please Login</h1>
             <input type="email" name="" id="" placeholder="Your Email" required>
             <input type="text" class="password" name="" id="" placeholder="Password" required>
-            <a href="https://www.remove.bg/upload"><input id="inp" type="submit" value="Login"></a>
+            <input id="inp" type="submit" value="Login">
         </form>
     </section>
 </body>
